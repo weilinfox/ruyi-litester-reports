@@ -9,7 +9,7 @@
 #####################################
 
 # ruyi variables
-if [ -n "$RUYI_VERSION" ]
+if [ -n "$RUYI_VERSION" ]; then
 	case "$(uname -m)" in
 		x86_64)
 			RUYI_ARCH="amd64"
