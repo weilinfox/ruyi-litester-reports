@@ -22,7 +22,7 @@ report_tmpl_dir="$SELF_PATH"/report_tmpl
 
 temp_dir=/tmp/ruyi_report
 report_name=`jq -r .\"${1:?}\" $report_name_js`
-log_name=`jq -r .\"${1:?}\" $log_name_js`
+log_name="${1:?}"
 
 . "$report_config_my_sh"
 . "$report_config_sh"
@@ -98,6 +98,7 @@ mv -v $TEST_LITESTER_PATH/my.md $TEST_LITESTER_PATH/ruyi_report/$report_name.md
 
 # pack all logs
 cd "${TEST_LITESTER_PATH}"
+rm *.md
 [ -d ./logs_failed ] && mv logs_failed "${log_name}"_failed && tar zcvf ruyi-test-logs_failed.tar.gz ./"${log_name}"_failed || touch ruyi-test-logs_failed.tar.gz
 tar zcvf ruyi-test-logs.tar.gz ./"${log_name}"
 cd $RUN_PATH
