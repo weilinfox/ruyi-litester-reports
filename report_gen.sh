@@ -93,7 +93,8 @@ sed -i "s/{{ruyi_testsuites}}/$ruyi_testsuites/g" $TEST_LITESTER_PATH/my.md
 sed -i "s/{{ruyi_success}}/$ruyi_success/g" $TEST_LITESTER_PATH/my.md
 sed -i "s/{{ruyi_failed}}/$ruyi_failed/g" $TEST_LITESTER_PATH/my.md
 # rename md report
-mv -v $TEST_LITESTER_PATH/my.md $TEST_LITESTER_PATH/$report_name.md
+[ -d "$TEST_LITESTER_PATH"/ruyi_report ] || mkdir "$TEST_LITESTER_PATH"/ruyi_report
+mv -v $TEST_LITESTER_PATH/my.md $TEST_LITESTER_PATH/ruyi_report/$report_name.md
 
 # pack all logs
 cd "${TEST_LITESTER_PATH}"
