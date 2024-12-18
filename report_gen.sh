@@ -73,7 +73,7 @@ ruyi_failed=0
 # get failed logs
 mkdir "${TEST_LITESTER_PATH}"/logs_failed
 for f in `ls "${TEST_LITESTER_PATH}"/logs/*.log`; do
-	if grep "- ERROR - The case exit by code" "$f"; then
+	if grep " - ERROR - The case exit by code" "$f"; then
 		cp -v "$f" "${TEST_LITESTER_PATH}"/logs_failed
 		((ruyi_failed++))
 	elif grep "FAIL:" "$f"; then
