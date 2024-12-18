@@ -100,6 +100,7 @@ mv -v $TEST_LITESTER_PATH/my.md $TEST_LITESTER_PATH/ruyi_report/$report_name.md
 cd "${TEST_LITESTER_PATH}"
 rm *.md
 [ -d ./logs_failed ] && mv logs_failed "${log_name}"_failed && tar zcvf ruyi-test-logs_failed.tar.gz ./"${log_name}"_failed || touch ruyi-test-logs_failed.tar.gz
+mv ./logs ./"${log_name}"
 tar zcvf ruyi-test-logs.tar.gz ./"${log_name}"
 cd $RUN_PATH
 
