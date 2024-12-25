@@ -13,6 +13,8 @@
 |  | ruyi-make | ruyi make 集成测试 |
 |  | ruyi-qemu | ruyi QEMU 支持测试 |
 |  | ruyi-llvm | ruyi LLVM 工具链调用测试 |
+|  | ruyi-box64 | ruyi box64 安装测试 |
+|  | ruyi-wps-office | ruyi wps-office 安装测试 |
 |  | ruyi-toolchain\_gnu-plct-rv64ilp32-elf | gnu-plct-rv64ilp32-elf 工具链调用测试 |
 |  | ruyi-toolchain\_gnu-milkv | gnu-milkv 工具链调用测试 |
 |  | ruyi-toolchain\_gnu-plct-xthead | gnu-plct-xthead 工具链调用测试 |
