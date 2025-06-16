@@ -11,6 +11,7 @@
 	"deepin-riscv64":	"RUYI_包管理_Deepin23_riscv64_测试结果",
 	"fedora39-x86_64":	"RUYI_包管理_Fedora39_x86_64_测试结果",
 	"fedora38-riscv64":	"RUYI_包管理_Fedora38_riscv64_测试结果",
+	"fedora41-riscv64":	"RUYI_包管理_Fedora41_riscv64_测试结果",
 	"oE2309-x86_64":	"RUYI_包管理_openEuler23.09_x86_64_测试结果",
 	"oE2309-riscv64":	"RUYI_包管理_openEuler23.09_riscv64_测试结果",
 	"oE2403-x86_64":	"RUYI_包管理_openEuler24.03_x86_64_测试结果",
