@@ -5,6 +5,7 @@
 | ruyi-advance | ruyi-config | ruyi 配置文件测试 |
 |  | ruyi-xdg | ruyi XDG 环境变量测试 |
 | ruyi-basic | ruyi-admin | ruyi admin 命令测试 |
+|  | ruyi-completion | ruyi 代码补全测试 |
 |  | ruyi-extract | ruyi extract 命令测试 |
 |  | ruyi-install | ruyi install 命令测试 |
 |  | ruyi-list | ruyi list 命令测试 |
